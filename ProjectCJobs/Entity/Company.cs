@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    public class Enterprise : User
+    public class Company : User
     {
         #region Attributes
         private string business;
@@ -15,27 +15,27 @@ namespace Entity
         #endregion
 
         #region Constructor
-        public Enterprise()
+        public Company()
         {
 
         }
 
-        public Enterprise(string business, string size)
+        public Company(string business, string size)
         {
             Business = business;
-            Size = size;
+            Size     = size;
         }
 
-        public Enterprise(int idUser, string name, DateTime birthDate, decimal yearsExperience, string skill, string description, string business, string size)
+        public Company(int idUser, string name, DateTime birthDate, decimal yearsExperience, string skill, string description, string business, string size)
         {
-            IdUser = idUser;
-            Name = name;
-            BirthDate = birthDate;
+            IdUser          = idUser;
+            Name            = name;
+            BirthDate       = birthDate;
             YearsExperience = yearsExperience;
-            Skill = skill;
-            Description = description;
-            Business = business;
-            Size = size;
+            Skill           = skill;
+            Description     = description;
+            Business        = business;
+            Size            = size;
         }
 
         #endregion
@@ -45,13 +45,13 @@ namespace Entity
         public string Business
         {
             set { business = value; }
-            get { return business; }
+            get { return business;  }
         }
 
         public string Size
         {
             set { size = value; }
-            get { return size; }
+            get { return size;  }
         }
 
         #endregion

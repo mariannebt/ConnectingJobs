@@ -27,12 +27,12 @@ namespace Entity
 
         protected User(int idUser, string name, DateTime birthDate, decimal yearsExperience, string skill, string description)
         {
-            IdUser = idUser;
-            Name = name;
-            BirthDate = birthDate;
-            YearsExperience = yearsExperience;
-            Skill = skill;
-            Description = description;
+            IdUser           = idUser;
+            Name             = name;
+            BirthDate        = birthDate;
+            YearsExperience  = yearsExperience;
+            Skill            = skill;
+            Description      = description;
         }
         #endregion
 
@@ -42,37 +42,37 @@ namespace Entity
         protected int IdUser
         {
             set { idUser = value; }
-            get { return idUser; }
+            get { return idUser;  }
         }
 
         protected string Name
         {
             set { name = value; }
-            get { return name; }
+            get { return name;  }
         }
 
         protected DateTime BirthDate
         {
             set { birthDate = value; }
-            get { return birthDate; }
+            get { return birthDate;  }
         }
 
         protected decimal YearsExperience
         {
             set { yearsExperience = value; }
-            get { return yearsExperience; }
+            get { return yearsExperience;  }
         }
 
         protected string Skill
         {
             set { skill = value; }
-            get { return skill; }
+            get { return skill;  }
         }
 
         protected string Description
         {
             set { description = value; }
-            get { return description; }
+            get { return description;  }
         }
         #endregion
 

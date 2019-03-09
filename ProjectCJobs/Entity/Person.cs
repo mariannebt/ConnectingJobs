@@ -24,24 +24,23 @@ namespace Entity
 
         public Person(string gender, string maritalStatus, string employmentStatus, string idUser)
         {
-            Gender = gender;
-            MaritalStatus = maritalStatus;
+            Gender           = gender;
+            MaritalStatus    = maritalStatus;
             EmploymentStatus = employmentStatus;
 
         }
 
-        public Person(int idUser, string name, DateTime birthDate, decimal yearsExperience, string skill, string description, string gender, string maritalStatus, string employmentStatus, string idUser)
+        public Person(int idUser, string name, DateTime birthDate, decimal yearsExperience, string skill, string description, string gender, string maritalStatus, string employmentStatus)
         {
-            IdUser = idUser;
-            Name = name;
-            BirthDate = birthDate;
-            YearsExperience = yearsExperience;
-            Skill = skill;
-            Description = description;
-            Gender = gender;
-            MaritalStatus = maritalStatus;
+            IdUser           = idUser;
+            Name             = name;
+            BirthDate        = birthDate;
+            YearsExperience  = yearsExperience;
+            Skill            = skill;
+            Description      = description;
+            Gender           = gender;
+            MaritalStatus    = maritalStatus;
             EmploymentStatus = employmentStatus;
-
         }
 
         #endregion
@@ -52,20 +51,20 @@ namespace Entity
         public string Gender
         {
             set { gender = value; }
-            get { return gender; }
+            get { return gender;  }
         }
 
         public string MaritalStatus
         {
             set { maritalStatus = value; }
-            get { return maritalStatus; }
+            get { return maritalStatus;  }
         }
 
 
         public string EmploymentStatus
         {
             set { employmentStatus = value; }
-            get { return employmentStatus; }
+            get { return employmentStatus;  }
         }
 
         #endregion
