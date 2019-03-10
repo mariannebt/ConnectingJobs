@@ -14,7 +14,9 @@ namespace Entity
         private int idPayment;
         private double total;
         private string type;
-
+        private Job job;
+        private Invoice invoice;
+        private Status status;
         #endregion
 
         #region Constructor
@@ -51,7 +53,21 @@ namespace Entity
             set { type = value; }
             get { return type; }
         }
-
+        public Job Job
+        {
+            set { job = value; }
+            get { return job; }
+        }
+        public Payment Payment
+        {
+            set { payment = value; }
+            get { return payment; }
+        }
+        public Status Status
+        {
+            set { status = value; }
+            get { return status; }
+        }
         #endregion
 
         #region Overrise ToString

@@ -19,6 +19,8 @@ namespace Entity
         private int number;
         private string complement;
         private int postalCode;
+        private User user;
+        private Community community;
 
         #endregion
 
@@ -93,7 +95,16 @@ namespace Entity
             set { postalCode = value; }
             get { return postalCode;  }
         }
-
+        public User User
+        {
+            set { user = value; }
+            get { return user;  }
+        }
+        public Community Community
+        {
+            set { community = value; }
+            get { return community;  }
+        }
         #endregion
 
         #region Overrise ToString

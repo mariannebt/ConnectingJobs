@@ -18,7 +18,11 @@ namespace Entity
         private DateTime startDate;
         private DateTime dueDate;
         private DateTime expirationDate;
-
+        private User user;
+        private Community community;
+        private Job job;
+        private Status status;
+        private Tech technoloy;
         #endregion
 
         #region Constructor
@@ -30,14 +34,14 @@ namespace Entity
 
         public Search(int idSearch, string title, string description, string observation, string wordKey, DateTime startDate, DateTime dueDate, DateTime expirationDate)
         {
-            IdSearch        = idSearch;
-            Title           = title;
-            Description     = description;
-            Observation     = observation;
-            WordKey         = wordKey;
-            StartDate       = startDate;
-            DueDate         = dueDate;
-            ExpirationDate  = expirationDate;
+            IdSearch = idSearch;
+            Title = title;
+            Description = description;
+            Observation = observation;
+            WordKey = wordKey;
+            StartDate = startDate;
+            DueDate = dueDate;
+            ExpirationDate = expirationDate;
         }
         #endregion
 
@@ -47,17 +51,17 @@ namespace Entity
         public int IdSearch
         {
             set { idSearch = value; }
-            get { return idSearch;  }
+            get { return idSearch; }
         }
         public string Title
         {
             set { title = value; }
-            get { return title;  }
+            get { return title; }
         }
         public string Description
         {
             set { description = value; }
-            get { return description;  }
+            get { return description; }
         }
         public string Observation
         {
@@ -67,25 +71,48 @@ namespace Entity
         public string WordKey
         {
             set { wordKey = value; }
-            get { return wordKey;  }
+            get { return wordKey; }
         }
         public DateTime StartDate
         {
             set { startDate = value; }
-            get { return startDate;  }
+            get { return startDate; }
         }
         public DateTime DueDate
         {
             set { dueDate = value; }
-            get { return dueDate;  }
+            get { return dueDate; }
         }
         public DateTime ExpirationDate
         {
             set { expirationDate = value; }
-            get { return expirationDate;  }
+            get { return expirationDate; }
         }
-
-
+        public User User
+        {
+            set { user = value; }
+            get { return user; }
+        }
+        public Community Community
+        {
+            set { community = value; }
+            get { return community; }
+        }
+        public Status Status
+        {
+            set { status = value; }
+            get { return status; }
+        }
+        public Job Job
+        {
+            set { job = value; }
+            get { return job; }
+        }
+        public Tech Technoloy
+        {
+            set { technoloy = value; }
+            get { return technoloy; }
+        }
         #endregion
 
         #region Overrise ToString

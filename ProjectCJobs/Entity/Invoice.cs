@@ -15,6 +15,8 @@ namespace Entity
         private double price;
         private double tax;
         private double total;
+        private Job job;
+        private Payment payment;
 
         #endregion
 
@@ -58,6 +60,16 @@ namespace Entity
         {
             set { total = value; }
             get { return total;  }
+        }
+        public Job Job
+        {
+            set { job = value; }
+            get { return job; }
+        }
+        public Payment Payment
+        {
+            set { payment = value; }
+            get { return payment; }
         }
 
         #endregion

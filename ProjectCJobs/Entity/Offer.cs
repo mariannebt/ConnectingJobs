@@ -19,7 +19,11 @@ namespace Entity
         private DateTime startDate;
         private DateTime dueDate;
         private DateTime expirationDate;
-
+        private User user;
+        private Community community;
+        private Job job;
+        private Status status;
+        private Tech technoloy;
         #endregion
 
         #region Constructor
@@ -86,7 +90,31 @@ namespace Entity
             set { expirationDate = value; }
             get { return expirationDate;  }
         }
-
+        public User User
+        {
+            set { user = value; }
+            get { return user; }
+        }
+        public Community Community
+        {
+            set { community = value; }
+            get { return community; }
+        }
+        public Status Status
+        {
+            set { status = value; }
+            get { return status; }
+        }
+        public Job Job
+        {
+            set { job = value; }
+            get { return job; }
+        }
+        public Tech Technoloy
+        {
+            set { technoloy = value; }
+            get { return technoloy; }
+        }
         #endregion
 
         #region Overrise ToString

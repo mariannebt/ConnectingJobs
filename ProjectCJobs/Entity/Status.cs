@@ -14,7 +14,6 @@ namespace Entity
         private int idStatus;
         private string name;
         private string observation;
-
         #endregion
 
         #region Constructor
@@ -49,7 +48,6 @@ namespace Entity
             set { observation = value; }
             get { return observation; }
         }
-
         #endregion
 
         #region Overrise ToString

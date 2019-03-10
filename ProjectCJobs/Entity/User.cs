@@ -16,7 +16,14 @@ namespace Entity
         private decimal yearsExperience;
         private string skill;
         private string description;
-
+        private Adress adress;
+        private Contact contact;
+        private List<UserCommunity> userCommunity;
+        private Status status;
+        private List<Search> search;
+        private List<Tech> tech;
+        private List<Offer> offer;
+        private List<Job> job;
         #endregion
 
         #region Constructor
@@ -74,8 +81,49 @@ namespace Entity
             set { description = value; }
             get { return description;  }
         }
+        protected Adress Adress
+        {
+            set { adress = value; }
+            get { return adress; }
+        }
+        protected Contact Contact
+        {
+            set { contact = value; }
+            get { return contact; }
+        }
+        protected List<UserCommunity> UserCommunity
+        {
+            set { userCommunity = value; }
+            get { return userCommunity; }
+        }
+        protected Status Status
+        {
+            set { status = value; }
+            get { return status; }
+        }
+        protected List<Search> Search
+        {
+            set { search = value; }
+            get { return search; }
+        }
+        protected List<Tech> Tech
+        {
+            set { tech = value; }
+            get { return tech; }
+        }
+        protected List<Offer> Offer
+        {
+            set { offer = value; }
+            get { return offer; }
+        }
+        protected List<Job> Job
+        {
+            set { job = value; }
+            get { return job; }
+        }
+
         #endregion
 
-     
+
     }
 }

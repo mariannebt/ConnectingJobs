@@ -13,6 +13,8 @@ namespace Entity
         private string name;
         private string information;
         private string observation;
+        private User user;
+        private Community community;
         #endregion
 
         #region Constructor
@@ -55,6 +57,16 @@ namespace Entity
         {
             set { observation = value; }
             get { return observation;  }
+        }
+        public User User
+        {
+            set { user = value; }
+            get { return user; }
+        }
+        public Community Community
+        {
+            set { community = value; }
+            get { return community; }
         }
         #endregion
 

@@ -14,6 +14,7 @@ namespace Entity
         private int countryCode;
         private int localCode;
         private int number;
+        private Contact contact;
         #endregion
 
         #region Constructor
@@ -58,6 +59,11 @@ namespace Entity
         {
             set { number = value; }
             get { return number;  }
+        }
+        public Contact Contact
+        {
+            set { contact = value; }
+            get { return contact; }
         }
 
         #endregion

@@ -15,7 +15,14 @@ namespace Entity
         private string name;
         private string description;
         private string leader;
-
+        private Adress adress;
+        private Contact contact;
+        private List<UserCommunity> userCommunity;
+        private Status status;
+        private List<Search> search;
+        private List<Tech> tech;
+        private List<Offer> offer;
+        private List<Job> job;
         #endregion
 
         #region Constructor
@@ -65,6 +72,47 @@ namespace Entity
             set { leader = value; }
             get { return leader;  }
         }
+        public Adress Adress
+        {
+            set { adress = value; }
+            get { return adress; }
+        }
+        public Contact Contact
+        {
+            set { contact = value; }
+            get { return contact; }
+        }
+        public List<UserCommunity> UserCommunity
+        {
+            set { userCommunity = value; }
+            get { return userCommunity; }
+        }
+        public Status Status
+        {
+            set { status = value; }
+            get { return status; }
+        }
+        public List<Search> Search
+        {
+            set { search = value; }
+            get { return search; }
+        }
+        public List<Tech> Tech
+        {
+            set { tech = value; }
+            get { return tech; }
+        }
+        public List<Offer> Offer
+        {
+            set { offer = value; }
+            get { return offer; }
+        }
+        public List<Job> Job
+        {
+            set { job = value; }
+            get { return job; }
+        }
+
 
         #endregion
 

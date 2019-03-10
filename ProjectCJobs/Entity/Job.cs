@@ -17,7 +17,14 @@ namespace Entity
         private DateTime startDate;
         private DateTime dueDate;
         private DateTime finishDate;
-
+        private User user;
+        private Community community;
+        private Search search;
+        private Offer offer;
+        private Status status;
+        private Tech technoloy;
+        private Invoice invoice;
+        private Payment payment;
         #endregion
 
         #region Constructor
@@ -77,6 +84,46 @@ namespace Entity
         {
             set { finishDate = value; }
             get { return finishDate;  }
+        }
+        public User User
+        {
+            set { user = value; }
+            get { return user; }
+        }
+        public Community Community
+        {
+            set { community = value; }
+            get { return community; }
+        }
+        public Search Search
+        {
+            set { search = value; }
+            get { return search; }
+        }
+        public Offer Offer
+        {
+            set { offer = value; }
+            get { return offer; }
+        }
+        public Status Status
+        {
+            set { status = value; }
+            get { return status; }
+        }
+        public Tech Tech
+        {
+            set { technoloy = value; }
+            get { return technoloy; }
+        }
+        public Invoice Invoice
+        {
+            set { invoice = value; }
+            get { return invoice; }
+        }
+        public Payment Payment
+        {
+            set { payment = value; }
+            get { return payment; }
         }
 
         #endregion
