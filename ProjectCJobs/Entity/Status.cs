@@ -25,7 +25,9 @@ namespace Entity
 
         public Status(int idStatus, string name, string observation)
         {
-
+            IdStatus    = idStatus;
+            Name        = name;
+            Observation = observation;
         }
 
         #endregion

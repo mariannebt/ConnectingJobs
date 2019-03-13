@@ -20,7 +20,9 @@ namespace Entity
         private string complement;
         private int postalCode;
         private User user;
+        private int idUser; // Foreignkey
         private Community community;
+        private int idCommunity; // Foreignkey
 
         #endregion
 
@@ -105,6 +107,17 @@ namespace Entity
             set { community = value; }
             get { return community;  }
         }
+        public int IdUser
+        {
+            set { idUser = value; }
+            get { return idUser;  }
+        }
+        public int IdCommunity
+        {
+            set { idCommunity = value; }
+            get { return idCommunity;  }
+        }
+
         #endregion
 
         #region Overrise ToString
